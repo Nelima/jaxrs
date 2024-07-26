@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <mirrors>
+        <mirror>
+            <id>nexus</id>
+            <name>Nexus</name>
+            <url>https://artefactrepository.service.ops.iptho.co.uk/repository/repository/public</url>
+            <mirrorOf>*</mirrorOf>
+        </mirror>
+    </mirrors>
+    <!-- TODO[KK]: Remove these exclusions once code-analyis part is fixed on CPT pipelines -->
+    <profiles>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <sonar.host.url>https://sonarqube-dtzo-kops1.service.ops.iptho.co.uk</sonar.host.url>
+                <sonar.log.level>DEBUG</sonar.log.level>
+                <sonar.verbose>true</sonar.verbose>
+                <sonar.coverage.exclusions>**/*.java</sonar.coverage.exclusions>
+                <sonar.exclusions>**/*.java</sonar.exclusions>
+            </properties>
+        </profile>
+    </profiles>
+</settings>

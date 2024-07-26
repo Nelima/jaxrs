@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Jaxrs.iml" filepath="$PROJECT_DIR$/.idea/Jaxrs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jaxrs-svc-java/services/pmp.iml" filepath="$PROJECT_DIR$/jaxrs-svc-java/services/pmp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jaxrs-svc-java/pmp-parent.iml" filepath="$PROJECT_DIR$/jaxrs-svc-java/pmp-parent.iml" />
+    </modules>
+  </component>
+</project>
